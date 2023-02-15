@@ -48,16 +48,16 @@ func testCutomerID(t *testing.T) {
 }
 
 // สามารถบันทึกข้อมูลได้
-// func testAll(t *testing.T) {
-// 	g := gomega.NewGomegaWithT(t)
+func testAll(t *testing.T) {
+	g := gomega.NewGomegaWithT(t)
 
-// 	a := Customer{
-// 		Name:       "Natthapong",
-// 		Email:      "Natthapong@gmail.com",
-// 		CustomerID: "L1234567",
-// 	}
+	a := Customer{
+		Name:       "Natthapong",
+		Email:      "Natthapong@gmail.com",
+		CustomerID: "L1234567",
+	}
 
-// 	ok, err := govalidator.ValidateStruct(a)
-// 	g.Expect(ok).To(gomega.BeTrue())
-// 	g.Expect(err).To(gomega.BeNil())
-// }
+	ok, err := govalidator.ValidateStruct(a)
+	g.Expect(ok).To(gomega.BeTrue())
+	g.Expect(err).To(gomega.BeNil())
+}
